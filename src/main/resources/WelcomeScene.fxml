@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="650.0" stylesheets="@welcomeScene.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.controllers.WelcomeController">
+    <ImageView fx:id="img" fitHeight="500.0" fitWidth="650.0">
+        <Image url="@ATM_BackGround.jpg" />
+    </ImageView>
+    <Button fx:id="atmNumSubmitButton" alignment="CENTER" contentDisplay="CENTER" layoutX="258.0" layoutY="422.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SubmitOfAtmNumber" prefHeight="38.0" prefWidth="120.0" text="Submit" textAlignment="RIGHT">
+        <font>
+            <Font name="Verdana Bold" size="14.0" />
+        </font>
+    </Button>
+    <TextField fx:id="atmNumEntryField" layoutX="185.0" layoutY="340.0" prefHeight="57.0" prefWidth="281.0" promptText="Enter ATM Number">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </TextField>
+    <Label fx:id="welcomeText" alignment="TOP_LEFT" layoutX="98.0" layoutY="50.0" prefHeight="199.0" prefWidth="454.0" text="WELCOME TO            SKY ATM" textAlignment="CENTER" wrapText="true">
+        <font>
+          <Font name="System Bold" size="60.0" />
+        </font>
+    </Label>
+   <Label fx:id="errorMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="39.0" layoutY="244.0" prefHeight="79.0" prefWidth="586.0" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold Italic" size="35.0" />
+      </font>
+   </Label>
+</AnchorPane>

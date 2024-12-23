@@ -1,0 +1,75 @@
+#messageField{
+    -fx-text-fill: rgb(15, 13, 13);
+}
+
+/* General styling for the TableView */
+.table-view {
+    -fx-border-color: rgb(41, 23, 10); /* Outer border of the table */
+    -fx-border-width: 1;       /* Border width */
+    -fx-padding: 0;
+}
+
+/* Styling for the header row */
+
+.table-view .column-header .label {
+    -fx-text-fill: rgb(0, 0, 0);    /* Header text color */
+    -fx-background-color: #2fff00; /* Alternate row colors */
+    -fx-font-weight: bold;   /* Header text bold */
+    -fx-alignment: center;   /* Center align header text */
+    -fx-border-color: black;
+    -fx-border-width: 0 0.5px 0.5px 0; /* Bottom border for column headers */
+}
+
+/* Styling for rows */
+.table-row-cell {
+    -fx-text-fill: rgb(0, 0, 0);        
+    -fx-background-radius: 0;
+}
+
+/* Align text in table cells to center */
+.table-cell {
+    -fx-alignment: center;    /* Align text to center */
+    -fx-border-color: black; /* Add borders for individual cells */
+    -fx-border-width: 0 0.5px 0.5 0;
+}
+
+.table-view .column-header {
+    -fx-padding: 0;
+    -fx-font-size: 14;
+    -fx-pref-height: 32px; /* Preferred height for header cells */
+}
+.table-row-cell:odd {
+    -fx-background-color: #dee82a; /* Light gray for odd rows */
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f8f48d; /* White for even rows */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #2c7be5; /* Background for selected row */
+    -fx-text-fill: white;          /* Text color for selected row */
+}
+.table-row-cell:hover {
+    -fx-background-color: #18e682; /* Hover effect background color */
+}
+.table-row-cell:selected:hover {
+    -fx-background-color: #2c7be5; /* Same as selected */
+    -fx-text-fill: white;
+}
+.button{
+    -fx-background-color: rgb(108, 226, 235);
+    -fx-text-fill: rgb(45, 30, 27);
+    -fx-border-color: rgb(18, 1, 16);
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+#exitButton:pressed {
+    -fx-background-color: #4301f8; /* Change to a red background */
+    -fx-text-fill: rgb(255, 0, 0);          /* Change text color */
+    -fx-scale-x: 0.85;             /* Slightly shrink the button */
+    -fx-scale-y: 0.85;
+    -fx-border-color: #b32f2f;     /* Darker border */
+}

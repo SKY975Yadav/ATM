@@ -1,0 +1,61 @@
+#pinEntryField{
+    -fx-background-color: rgb(180, 205, 224);
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-border-color: rgb(37, 46, 35);
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+    -fx-prompt-text-fill: rgb(91, 50, 50);
+}
+#messageField{
+    -fx-text-fill: rgb(15, 13, 13);
+}
+.button{
+    -fx-background-color: rgb(228, 215, 206);
+    -fx-text-fill: rgb(45, 30, 27);
+    -fx-border-color: rgb(18, 1, 16);
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;  
+}
+.button:pressed {
+    -fx-background-color: #009dff; /* Change to a red background */
+    -fx-text-fill: rgb(0, 0, 0);          /* Change text color */
+    -fx-scale-x: 0.85;             /* Slightly shrink the button */
+    -fx-scale-y: 0.85;
+    -fx-border-color: #3f3323;     /* Darker border */
+}
+#exitButton{
+    -fx-background-color: rgb(108, 226, 235);
+    -fx-text-fill: rgb(45, 30, 27);
+    -fx-border-color: rgb(18, 1, 16);
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+#enterButton{
+    -fx-background-color: rgb(108, 226, 235);
+    -fx-text-fill: rgb(45, 30, 27);
+    -fx-border-color: rgb(18, 1, 16);
+    -fx-border-width: 1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+#exitButton:pressed {
+    -fx-background-color: #4301f8; /* Change to a red background */
+    -fx-text-fill: rgb(255, 0, 0);          /* Change text color */
+    -fx-scale-x: 0.85;             /* Slightly shrink the button */
+    -fx-scale-y: 0.85;
+    -fx-border-color: #b32f2f;     /* Darker border */
+}
+#enterButton:pressed {
+    -fx-background-color: #06ed38; /* Change to a red background */
+    -fx-text-fill: rgb(0, 0, 0);          /* Change text color */
+    -fx-scale-x: 0.85;             /* Slightly shrink the button */
+    -fx-scale-y: 0.85;
+    -fx-border-color: #3f3323;    /* Darker border */
+}

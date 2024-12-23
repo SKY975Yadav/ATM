@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Rating.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.controllers.RatingController">
+    <ImageView fitHeight="500.0" fitWidth="650.0">
+        <Image url="@ATM_BackGround.jpg" />
+    </ImageView>
+    <Label fx:id="serviceMessage" alignment="CENTER" layoutY="14.0" prefHeight="95.0" prefWidth="650.0" text="Rate our ATM Service" textAlignment="CENTER" textFill="#281515" wrapText="true">
+        <font>
+          <Font name="System Bold" size="45.0" />
+        </font>
+    </Label>
+   <VBox layoutX="42.0" layoutY="142.0" prefHeight="324.0" prefWidth="308.0" spacing="10.0">
+      <RadioButton fx:id="excellentRadioButton" mnemonicParsing="false" onAction="#excellentPressed" prefHeight="50.0" prefWidth="197.0" text="Excellent">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ratings" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="goodRadioButton" mnemonicParsing="false" onAction="#goodPressed" prefHeight="50.0" prefWidth="195.0" text="Good" toggleGroup="$ratings">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="averageRadioButton" mnemonicParsing="false" onAction="#averagePressed" prefHeight="50.0" prefWidth="196.0" text="Average" toggleGroup="$ratings">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="belowAverageRadioButton" mnemonicParsing="false" onAction="#belowAveragePressed" prefHeight="50.0" prefWidth="229.0" text="Below Average" toggleGroup="$ratings">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="badRadioButton" mnemonicParsing="false" onAction="#badPressed" prefHeight="50.0" prefWidth="195.0" text="Bad" toggleGroup="$ratings">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </RadioButton>
+   </VBox>
+   <Button fx:id="exitButton" alignment="CENTER" contentDisplay="CENTER" layoutX="467.0" layoutY="439.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exitAction" prefHeight="40.0" prefWidth="116.0" text="Exit" textAlignment="CENTER">
+      <font>
+         <Font name="Arial Bold" size="17.0" />
+      </font>
+   </Button>
+   <Button fx:id="submitButton" alignment="CENTER" contentDisplay="CENTER" layoutX="467.0" layoutY="376.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#submitAction" prefHeight="40.0" prefWidth="116.0" text="Submit" textAlignment="CENTER">
+      <font>
+         <Font name="Arial Bold" size="17.0" />
+      </font>
+   </Button>
+   <Label fx:id="errorMessage" alignment="CENTER" layoutX="335.0" layoutY="199.0" prefHeight="104.0" prefWidth="301.0" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font name="System Bold" size="23.0" />
+      </font>
+   </Label>
+</AnchorPane>

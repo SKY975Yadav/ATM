@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.controllers.FinalMessageController">
+    <ImageView fitHeight="500.0" fitWidth="650.0">
+        <Image url="@ATM_BackGround.jpg" />
+    </ImageView>
+    <Label fx:id="endingMessage" alignment="CENTER" layoutX="3.0" layoutY="151.0" prefHeight="186.0" prefWidth="634.0" text="Thank you for choosing our ATM service. We wish you a wonderful day!" textAlignment="CENTER" textFill="#330836" wrapText="true">
+        <font>
+          <Font name="Arial Bold Italic" size="40.0" />
+        </font>
+    </Label>
+
+</AnchorPane>
