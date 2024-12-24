@@ -84,7 +84,7 @@ Make sure you have the following software installed:
     In the Run Configuration, add the VM options to include the JavaFX libraries:
 
    ```
-   sh--module-path "path_to_javafx_sdk/lib" --add-modules javafx.controls,javafx.fxml
+   --module-path "path_to_javafx_sdk/lib" --add-modules javafx.controls,javafx.fxml
    
 6. **Run the Application**
     In your IDE, locate the main class (likely Main.java or ATMApplication.java) and run the project.
