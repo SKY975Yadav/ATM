@@ -82,9 +82,11 @@ Make sure you have the following software installed:
     Go to File > Project Structure.
     Under Libraries, add the JavaFX SDK.
     In the Run Configuration, add the VM options to include the JavaFX libraries:
-    code : --module-path "path_to_javafx_sdk/lib" --add-modules javafx.controls,javafx.fxml
+
+   ```
+   sh--module-path "path_to_javafx_sdk/lib" --add-modules javafx.controls,javafx.fxml
    
-5. **Run the Application**
+6. **Run the Application**
     In your IDE, locate the main class (likely Main.java or ATMApplication.java) and run the project.
     The JavaFX ATM interface should launch, and you can test the functionality.
 
