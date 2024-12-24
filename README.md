@@ -72,12 +72,13 @@ Make sure you have the following software installed:
 3. **Configure the Database Connection** :
     Open the project in your chosen IDE (e.g., IntelliJ IDEA).
     Update the database connection settings in the project to match your MySQL server:
+    modify the code in databse connection and service class :
     URL: jdbc:mysql://localhost:3306/atm_project
     Username: root (or your MySQL username)
     Password: your_password
     You can find the database connection code in the project’s DatabaseConfig.java or similar file.
 
-4. **Set Up JavaFX in Your IDE**
+5. **Set Up JavaFX in Your IDE**
     If using IntelliJ IDEA, follow these steps:
     Go to File > Project Structure.
     Under Libraries, add the JavaFX SDK.
