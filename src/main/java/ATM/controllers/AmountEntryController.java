@@ -6,10 +6,12 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.util.Objects;
 
 public class AmountEntryController  {
 
@@ -19,7 +21,14 @@ public class AmountEntryController  {
     public Button exitButton;
 
     private Session session = Session.getInstance();
-
+    public void initialise(){
+        // Add key event handler
+        amountEntryField.setOnKeyPressed(event -> {
+            if (Objects.requireNonNull(event.getCode()) == KeyCode.ENTER) {
+                enterButton.fire(); // Trigger button click on Enter
+            }
+        });
+    }
     public void handleNumberInput(ActionEvent event) {
         String number = ((javafx.scene.control.Button) event.getSource()).getText();
         amountEntryField.appendText(number);

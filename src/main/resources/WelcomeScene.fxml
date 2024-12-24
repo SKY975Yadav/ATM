@@ -12,7 +12,7 @@
     <ImageView fx:id="img" fitHeight="500.0" fitWidth="650.0">
         <Image url="@ATM_BackGround.jpg" />
     </ImageView>
-    <Button fx:id="atmNumSubmitButton" alignment="CENTER" contentDisplay="CENTER" layoutX="258.0" layoutY="422.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#SubmitOfAtmNumber" prefHeight="38.0" prefWidth="120.0" text="Submit" textAlignment="RIGHT">
+    <Button fx:id="atmNumSubmitButton" alignment="CENTER" contentDisplay="CENTER" layoutX="258.0" layoutY="422.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#submitOfAtmNumber" prefHeight="38.0" prefWidth="120.0" text="Submit" textAlignment="RIGHT">
         <font>
             <Font name="Verdana Bold" size="14.0" />
         </font>

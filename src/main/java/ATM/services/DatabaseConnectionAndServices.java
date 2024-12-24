@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 public class DatabaseConnectionAndServices {
-    private static final String url = "jdbc:mysql://localhost:3306/bank";
-    private static final String name = "root";
-    private static final String password = "6301722975";
+    private static final String url = System.getenv("DB_URL");
+    private static final String name = System.getenv("DB_USERNAME");
+    private static final String password = System.getenv("DB_PASSWORD");
 
     public  Optional<Account> getAccount(long atmNumber) {
         Account account = null;

@@ -24,7 +24,7 @@ public class WelcomeController {
 
     DatabaseConnectionAndServices databaseConnectionAndServices = new DatabaseConnectionAndServices();
 
-    public void SubmitOfAtmNumber(ActionEvent event) throws IOException {
+    public void submitOfAtmNumber(ActionEvent event) throws IOException {
 
         String atmNumString = atmNumEntryField.getText();
 
