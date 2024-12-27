@@ -48,9 +48,10 @@ Make sure you have the following software installed:
     Balance DECIMAL(15, 2) DEFAULT NULL
     );
    ```
+   insert some random data
 
-   ```sh
    ### For Transactions :
+   ```sh
    CREATE TABLE transactions (
     transaction_id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     atm_number BIGINT,
@@ -62,8 +63,8 @@ Make sure you have the following software installed:
     );
    ```
 
-   ```sh
    ### For Ratings :
+   ```sh
    CREATE TABLE ratings (
     transaction_id BIGINT NOT NULL PRIMARY KEY,
     transaction_type VARCHAR(20) DEFAULT NULL,
@@ -74,7 +75,7 @@ Make sure you have the following software installed:
     );
    ```
    
-3. **Configure the Database Connection** :
+4. **Configure the Database Connection** :
     Open the project in your chosen IDE (e.g., IntelliJ IDEA).
     Update the database connection settings in the project to match your MySQL server:
     modify the code in databse connection and service class :
