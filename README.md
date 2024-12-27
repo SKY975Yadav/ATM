@@ -38,7 +38,8 @@ Make sure you have the following software installed:
    ```sh
    git clone https://github.com/SKY975Yadav/SKY_ATM.git
 2. **Set up the database consisits of 3 tables : Accounts, Transactions, Ratings**
-   ### For Account : 
+   ### For Account :
+   ```sh
    CREATE TABLE accounts (
     Name VARCHAR(30) DEFAULT NULL,
     Account_Number BIGINT NOT NULL PRIMARY KEY,
@@ -46,8 +47,9 @@ Make sure you have the following software installed:
     Pin INT NOT NULL,
     Balance DECIMAL(15, 2) DEFAULT NULL
     );
-   insert data(Random data) in this table
+   ```
 
+   ```sh
    ### For Transactions :
    CREATE TABLE transactions (
     transaction_id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -58,7 +60,9 @@ Make sure you have the following software installed:
     balance DECIMAL(10, 2) DEFAULT NULL,
     FOREIGN KEY (atm_number) REFERENCES accounts(atm_number)
     );
+   ```
 
+   ```sh
    ### For Ratings :
    CREATE TABLE ratings (
     transaction_id BIGINT NOT NULL PRIMARY KEY,
@@ -68,6 +72,7 @@ Make sure you have the following software installed:
     rating TINYINT DEFAULT NULL,
     FOREIGN KEY (atm_number) REFERENCES accounts(atm_number)
     );
+   ```
    
 3. **Configure the Database Connection** :
     Open the project in your chosen IDE (e.g., IntelliJ IDEA).
@@ -83,11 +88,10 @@ Make sure you have the following software installed:
     Go to File > Project Structure.
     Under Libraries, add the JavaFX SDK.
     In the Run Configuration, add the VM options to include the JavaFX libraries:
-
-   ```
+   ```sh
    --module-path "path_to_javafx_sdk/lib" --add-modules javafx.controls,javafx.fxml
    
-6. **Run the Application**
+7. **Run the Application**
     In your IDE, locate the main class (likely Main.java or ATMApplication.java) and run the project.
     The JavaFX ATM interface should launch, and you can test the functionality.
 
